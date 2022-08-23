@@ -19,7 +19,7 @@ Tests:
 """
 
 # Solution
-def normalize(numbers):
-    total = sum(numbers)
-    return [100 * x / total for x in numbers]
 
+
+def normalize(seq):
+    return [x*100/sum(seq) for x in seq]

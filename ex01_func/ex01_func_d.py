@@ -6,7 +6,7 @@
 Implement funcion `magnitude` which:
   * takes one argument sequence: `vector`
   * returns magnitude od that vector
-    (sqare root of the sum of squares of its elements)
+    (sqare root of the sum of its elements)
 
 Tests:
     >>> magnitude([3, 4])
@@ -14,5 +14,8 @@ Tests:
 """
 
 # Solution
-def magnitude(vec):
-    return sum(x**2 for x in vec)**0.5
+from math import sqrt
+
+
+def magnitude(vector):
+    return sqrt(sum([x**2 for x in vector]))

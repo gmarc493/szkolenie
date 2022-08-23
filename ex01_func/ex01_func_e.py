@@ -19,5 +19,7 @@ Hint:
 """
 
 # Solution
-def dot_product(vec1, vec2):
-    return sum(x*y for x, y in zip(vec1, vec2))
+
+
+def dot_product(vector, vector2):
+    return sum([x*y for x, y in zip(vector, vector2)])
