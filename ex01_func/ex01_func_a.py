@@ -17,3 +17,11 @@ Tests:
 """
 
 # Solution
+def total(seq):
+    acc = 0
+    for x in seq:
+        acc += x
+    return acc
+
+# Better:
+#total = sum

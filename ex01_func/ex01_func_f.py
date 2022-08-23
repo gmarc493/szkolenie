@@ -23,3 +23,15 @@ Hint:
 """
 
 # Solution
+def factorial(n):
+    if n <= 2:
+        return n
+    return n * factorial(n-1)
+
+
+def factorial(n):
+    acc = 1
+    for x in range(1, n+1):
+        acc *= x
+    return acc
+

@@ -15,3 +15,15 @@ Tests:
 """
 
 # Solution
+def scale(n, vec):
+    out = []
+    for x in vec:
+        out.append(n*x)
+    return out
+
+def scale(n, vec):
+    return map(lambda x: n*x, vec)
+
+def scale(n, vec):
+    return [n*x for x in vec]
+
