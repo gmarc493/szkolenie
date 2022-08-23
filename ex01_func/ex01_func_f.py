@@ -26,4 +26,6 @@ Hint:
 
 
 def factorial(n):
-    return factorial(n-1)
+    if n<=2:
+        return n
+    return n * factorial(n-1)
