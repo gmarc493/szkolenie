@@ -67,3 +67,6 @@ class Vector(VectorBase):
             return Vector([x+y for x,y in zip(self,other)])
         elif isinstance(other, Number):
             return Vector([x+other for x in self])
+
+    def __lt__(self, other):
+        return self.magnitude < other.magnitude
